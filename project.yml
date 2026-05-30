@@ -13,7 +13,7 @@ packages:
 settings:
   base:
     SWIFT_VERSION: "5.9"
-    TARGETED_DEVICE_FAMILY: "1"
+    TARGETED_DEVICE_FAMILY: "1,2"
     MARKETING_VERSION: "1.1"
     CURRENT_PROJECT_VERSION: "1"
     PRODUCT_BUNDLE_IDENTIFIER: com.tokyonasu.idphotomaker
@@ -24,8 +24,6 @@ targets:
     type: application
     platform: iOS
     sources: [IDPhotoMaker]
-    dependencies:
-      - package: GoogleMobileAds
     info:
       path: IDPhotoMaker/Info.plist
       properties:
@@ -41,6 +39,11 @@ targets:
           UIColorName: ""
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
+        UISupportedInterfaceOrientations~ipad:
+          - UIInterfaceOrientationPortrait
+          - UIInterfaceOrientationPortraitUpsideDown
+          - UIInterfaceOrientationLandscapeLeft
+          - UIInterfaceOrientationLandscapeRight
         NSAppTransportSecurity:
           NSAllowsArbitraryLoads: true
         GADApplicationIdentifier: "ca-app-pub-9404799280370656~1664371422"
@@ -61,7 +64,8 @@ targets:
         GENERATE_INFOPLIST_FILE: NO
         CODE_SIGN_STYLE: Manual
         DEVELOPMENT_TEAM: 83VGKGSQUH
-        TARGETED_DEVICE_FAMILY: "1"
+        TARGETED_DEVICE_FAMILY: "1,2"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64 x86_64"
     dependencies:
       - package: GoogleMobileAds
