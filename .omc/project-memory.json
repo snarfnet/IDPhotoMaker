@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1780140654000,
+  "projectRoot": "C:\\Users\\Windows\\IDPhotoMaker",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "IDPhotoMaker": {
+      "path": "IDPhotoMaker",
+      "purpose": null,
+      "fileCount": 11,
+      "lastAccessed": 1780140653960,
+      "keyFiles": [
+        "BannerAdView.swift",
+        "ContentView.swift",
+        "EditorView.swift",
+        "ExportView.swift",
+        "HomeView.swift"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "project.yml",
+      "accessCount": 2,
+      "lastAccessed": 1780226834397,
+      "type": "file"
+    }
+  ],
+  "userDirectives": []
+}

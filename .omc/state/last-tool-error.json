@@ -1,7 +1,7 @@
 {
-  "tool_name": "Bash",
-  "tool_input_preview": "{\"command\":\"cp \\\"C:/Users/Windows/NailTry/.github/workflows/build.yml\\\" \\\"C:/Users/Windows/IDPhotoMaker/.github/workflows/build.yml\\\" && sed -i 's/com\\\\.snarfnet\\\\.nailtry/com.tokyonasu.idphotomaker/g...",
-  "error": "Exit code 1\ncp: cannot create regular file 'C:/Users/Windows/IDPhotoMaker/.github/workflows/build.yml': No such file or directory",
-  "timestamp": "2026-05-30T11:18:02.006Z",
-  "retry_count": 2
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"C:\\\\Users\\\\Windows\\\\.claude\\\\projects\\\\C--Users-Windows\\\\memory\\\\project_idphotomaker.md\"}",
+  "error": "File does not exist. Note: your current working directory is C:\\Users\\Windows\\IDPhotoMaker.",
+  "timestamp": "2026-05-30T11:40:43.761Z",
+  "retry_count": 1
 }
