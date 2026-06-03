@@ -15,7 +15,7 @@ settings:
     SWIFT_VERSION: "5.9"
     TARGETED_DEVICE_FAMILY: "1,2"
     MARKETING_VERSION: "1.1"
-    CURRENT_PROJECT_VERSION: "2"
+    CURRENT_PROJECT_VERSION: "3"
     PRODUCT_BUNDLE_IDENTIFIER: com.tokyonasu.idphotomaker
     SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD: NO
 
@@ -46,6 +46,7 @@ targets:
           - UIInterfaceOrientationLandscapeRight
         NSAppTransportSecurity:
           NSAllowsArbitraryLoads: true
+        NSUserTrackingUsageDescription: "広告の最適化のため、トラッキングの許可をお願いします。"
         GADApplicationIdentifier: "ca-app-pub-9404799280370656~1664371422"
         SKAdNetworkItems:
           - SKAdNetworkIdentifier: cstr6suwn9.skadnetwork
