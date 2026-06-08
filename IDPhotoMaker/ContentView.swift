@@ -7,6 +7,9 @@ class AppState: ObservableObject {
     @Published var processedImage: UIImage? = nil
     @Published var selectedBG: BackgroundColor = .white
     @Published var finalImage: UIImage? = nil
+    @Published var selectedFilter: BeautyFilter? = nil
+    @Published var brightness: Double = 0.0
+    @Published var contrast: Double = 1.0
 }
 
 struct ContentView: View {

@@ -3,6 +3,7 @@ import PhotosUI
 
 struct PhotoCaptureView: View {
     @EnvironmentObject var state: AppState
+    @ObservedObject var store = StoreManager.shared
     @State private var showCamera = false
     @State private var showLibrary = false
     @State private var libraryItem: PhotosPickerItem? = nil
@@ -32,8 +33,10 @@ struct PhotoCaptureView: View {
                 .padding(.horizontal, 20)
                 .padding(.top, 16)
 
-                BannerAdView(adUnitID: "ca-app-pub-9404799280370656/2973583668")
-                    .frame(height: 50)
+                if !store.isPro {
+                    BannerAdView(adUnitID: "ca-app-pub-9404799280370656/2973583668")
+                        .frame(height: 50)
+                }
 
                 Spacer()
 
@@ -114,8 +117,10 @@ struct PhotoCaptureView: View {
                 .padding(.horizontal, 20)
                 .padding(.bottom, 16)
 
-                BannerAdView(adUnitID: "ca-app-pub-9404799280370656/9069278214")
-                    .frame(height: 50)
+                if !store.isPro {
+                    BannerAdView(adUnitID: "ca-app-pub-9404799280370656/9069278214")
+                        .frame(height: 50)
+                }
             }
         }
         .fullScreenCover(isPresented: $showCamera) {
