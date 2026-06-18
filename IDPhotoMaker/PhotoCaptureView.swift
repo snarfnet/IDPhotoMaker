@@ -33,11 +33,6 @@ struct PhotoCaptureView: View {
                 .padding(.horizontal, 20)
                 .padding(.top, 16)
 
-                if !store.isPro {
-                    BannerAdView(adUnitID: "ca-app-pub-9404799280370656/2973583668")
-                        .frame(height: 50)
-                }
-
                 Spacer()
 
                 // Illustration area
@@ -116,11 +111,6 @@ struct PhotoCaptureView: View {
                 }
                 .padding(.horizontal, 20)
                 .padding(.bottom, 16)
-
-                if !store.isPro {
-                    BannerAdView(adUnitID: "ca-app-pub-9404799280370656/9069278214")
-                        .frame(height: 50)
-                }
             }
         }
         .fullScreenCover(isPresented: $showCamera) {

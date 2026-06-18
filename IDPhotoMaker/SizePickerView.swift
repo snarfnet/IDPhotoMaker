@@ -33,11 +33,6 @@ struct SizePickerView: View {
                 .padding(.top, 16)
                 .padding(.bottom, 12)
 
-                if !store.isPro {
-                    BannerAdView(adUnitID: "ca-app-pub-9404799280370656/2973583668")
-                        .frame(height: 50)
-                }
-
                 ScrollView {
                     VStack(spacing: 12) {
                         ForEach(IDPhotoSize.freePresets) { size in
@@ -103,11 +98,6 @@ struct SizePickerView: View {
                     .disabled(selected == nil)
                     .padding(.horizontal, 20)
                     .padding(.vertical, 16)
-
-                    if !store.isPro {
-                        BannerAdView(adUnitID: "ca-app-pub-9404799280370656/9069278214")
-                            .frame(height: 50)
-                    }
                 }
                 .background(Color(red: 0.97, green: 0.97, blue: 1.0))
             }
